@@ -10,13 +10,13 @@ curl --include --request POST http://localhost:4741/movies \
   }'
 
 
-curl --include --request POST http://localhost:4741/movies \
-  --header "Content-Type: application/json" \
-  --header "Authorization: Token token=BAhJIiU2N2QzYzE0NDcxMzkxOTM3MDJhMWU0Mjg3ODMzYjI4MgY6BkVG--9f4ac75eabf290141041fe5725eb6caf1a6319cd" \
-  --data '{
-    "movie": {
-      "name": "Princess",
-      "year": 1987,
-      "rating": 4.1
-    }
-  }'
+# curl --include --request POST http://localhost:4741/movies \
+#   --header "Content-Type: application/json" \
+#   --header "Authorization: Token token=BAhJIiVlYTI1ZDNkOThkZDQwOGJmMjY4NjY3OTQxMDRjN2UyZgY6BkVG--869ae4f9808ea2fef6e6dac2994457bd0d3170e0" \
+#   --data '{
+#     "movie": {
+#       "name": "Slumdog Millionaire",
+#       "year": 2008,
+#       "rating": 4.9
+#     }
+#   }'
