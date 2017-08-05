@@ -1,9 +1,9 @@
-class MoviesController < OpenReadController
+class MoviesController < ProtectedController
   before_action :set_movie, only: [:show, :update, :destroy]
 
   # GET /movies
   def index
-    @movies = Movie.all
+    @movies = current_user.movies.all
 
     render json: @movies
   end
@@ -41,7 +41,7 @@ class MoviesController < OpenReadController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_movie
-      @movie = Movie.find(params[:id])
+      @movie = current_user.movies.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
