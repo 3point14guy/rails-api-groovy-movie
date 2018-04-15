@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/28842407/28465354-6a990284-6df6-11e7-8
 After constructing the table and establishing relationships for the routes, I started methodically testing the authentication and SQL table for the routes with curl requests which can be found in the scripts folder.
 
 Others can interact with this database through the following routes:
-movies GET    /movies(.:format)              movies#index
+  movies GET    /movies(.:format)              movies#index
          POST   /movies(.:format)              movies#create
    movie GET    /movies/:id(.:format)          movies#show
          PATCH  /movies/:id(.:format)          movies#update
